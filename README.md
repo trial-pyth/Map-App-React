@@ -5,8 +5,7 @@ A React App that tracks users location , can search places using Mapbox API and 
 
 ### ⚠️ __Note__
 
-#### Use mapRef to Initialize your Map. Ignore the functions present in leaflet documentation. Some methods like `addLayer` is not working 
-in React v18.
+#### Use mapRef to Initialize your Map. Ignore the functions present in leaflet documentation. Some methods like `addLayer` is not working in React v18.
 
 ```JS
 const mapRef = useRef();
