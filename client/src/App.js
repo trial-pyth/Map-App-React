@@ -20,8 +20,6 @@ function App() {
 
   const initializeMap = () => {
     mapRef.current = new L.map("map").setView([28.538336, -81.379234], 10);
-    let token =
-      "pk.eyJ1IjoibWlzaXhpIiwiYSI6ImNsY2Q4bnVtaTA5eWIzbmx3YngzYzJ0ZDMifQ.ZTJICPqdi9HfKAIn1BbABg";
 
     L.tileLayer(
       "https://api.mapbox.com/styles/v1/misixi/clcedh8kx000b14mr7776gtot/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWlzaXhpIiwiYSI6ImNsY2Q4bnVtaTA5eWIzbmx3YngzYzJ0ZDMifQ.ZTJICPqdi9HfKAIn1BbABg",
