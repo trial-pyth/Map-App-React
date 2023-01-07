@@ -1,17 +1,19 @@
 const express = require("express");
 const cors = require("cors");
-
 require("dotenv").config();
 
-const PORT = process.env.port || 4000;
+const PORT = process.env.PORT || 5000;
 
-// ..init express
 const app = express();
 
-//enable cors
 app.use(cors());
 
-//routes
-app.use("/api/search/", require("./routes/searchResults.js"));
+// routes
+app.use("/api/search", require("./routes/searchResults.js"));
 
-app.listen(PORT, () => console.log(`app has started on port: ${PORT}`));
+// Handle Production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(`${__dirname}/public`));
+}
+
+app.listen(PORT, () => console.log(`app started on port: ${PORT}`));

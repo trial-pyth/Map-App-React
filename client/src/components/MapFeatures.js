@@ -24,19 +24,19 @@ const MapFeatures = ({
   const handleInput = (e) => {
     setSearchQuery(e.target.value);
 
+    console.log(searchQuery);
     search();
   };
 
   const search = () => {
     clearTimeout(queryTimeout);
 
-    setSearchData(null);
+    // setSearchData(null);
     setQueryTimeout(
       setTimeout(async () => {
         if (searchQuery !== "") {
           const params = new URLSearchParams({
-            access_token:
-              "pk.eyJ1IjoibWlzaXhpIiwiYSI6ImNsY2Q4bnVtaTA5eWIzbmx3YngzYzJ0ZDMifQ.ZTJICPqdi9HfKAIn1BbABg",
+            access_token: process.env.REACT_APP_API_KEY,
             fuzzyMatch: true,
             language: "en",
             limit: 7,
@@ -45,7 +45,7 @@ const MapFeatures = ({
           const getData = await axios.get(
             `http://localhost:4000/api/search/${searchQuery}?${params}`
           );
-
+          console.log(getData);
           setSearchData(getData.data.features);
         }
       }, 750)
@@ -60,8 +60,7 @@ const MapFeatures = ({
         <input
           className="pl-9 pr-4 py-3 text-sm focus:outline-none w-full drop-shadow-2xl rounded-md"
           type="text"
-          name=""
-          id=""
+          name="input"
           placeholder="Start your search"
           onChange={handleInput}
           onFocus={toggleSearchResults}

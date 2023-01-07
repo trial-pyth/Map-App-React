@@ -22,7 +22,7 @@ function App() {
     mapRef.current = new L.map("map").setView([28.538336, -81.379234], 10);
 
     L.tileLayer(
-      "https://api.mapbox.com/styles/v1/misixi/clcedh8kx000b14mr7776gtot/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWlzaXhpIiwiYSI6ImNsY2Q4bnVtaTA5eWIzbmx3YngzYzJ0ZDMifQ.ZTJICPqdi9HfKAIn1BbABg",
+      `https://api.mapbox.com/styles/v1/misixi/clcedh8kx000b14mr7776gtot/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_API_KEY}`,
       {
         attribution:
           "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
