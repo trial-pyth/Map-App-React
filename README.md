@@ -44,7 +44,7 @@ useEffect(() => {
 ```
 ## __📍 Use mouse to zoom and move the map layer__
 
-<img src="https://github.com/trial-pyth/Travel-App-React/blob/master/img/movement-zoom.gif?raw=true" alt="movement-zoom" width=600 height=500/><sub><sup>⌛ Please wait until GIF loads</sup></sub>
+<img src="https://github.com/trial-pyth/Travel-App-React/blob/master/img/movement-zoom.gif?raw=true" alt="movement-zoom" width=500 height=250/><sub><sup>⌛ Please wait until GIF loads</sup></sub>
 
 ## __Enable location access and toggle location mode__
 
@@ -52,8 +52,8 @@ useEffect(() => {
 
 ## 🔍 __Search for your desired location in the search bar__
 
-<img src="https://github.com/trial-pyth/Travel-App-React/blob/master/img/search.gif?raw=true" alt="movement-zoom" width=600 height=300 /><sub><sup>⌛ Please wait until GIF loads</sup></sub>
+<img src="https://github.com/trial-pyth/Travel-App-React/blob/master/img/search.gif?raw=true" alt="movement-zoom" width=500 /><sub><sup>⌛ Please wait until GIF loads</sup></sub>
 
 ## 🗾 Make sure that you have given access to your location in the browser and in your settings
 
-<img src="https://github.com/trial-pyth/Travel-App-React/blob/master/img/location-error.gif?raw=true" alt="movement-zoom" width=600 height=300 /><sub><sup>⌛ Please wait until GIF loads</sup></sub>
+<img src="https://github.com/trial-pyth/Travel-App-React/blob/master/img/location-error.gif?raw=true" alt="movement-zoom" width=500 /><sub><sup>⌛ Please wait until GIF loads</sup></sub>
